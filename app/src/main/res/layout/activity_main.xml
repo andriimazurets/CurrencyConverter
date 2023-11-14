@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/horizontal_margin"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text_one_currency_to_another"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_one_currency_to_another"
+        android:textColor="@color/colorGrey"
+        android:textSize="@dimen/normalText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_one_currency_converter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter"
+        android:text="@string/text_one_currency_converter"
+        android:textSize="@dimen/largeText"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_one_currency_to_another" />
+
+    <ImageButton
+        android:id="@+id/btn_share"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:src="@drawable/ic_btn_share"
+        app:layout_constraintBottom_toTopOf="@+id/view_separator"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/ds_share" />
+
+    <View
+        android:id="@+id/view_separator"
+        style="@style/separator"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_last_update_time" />
+
+    <TextView
+        android:id="@+id/text_last_update_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_last_update_time"
+        android:textColor="@color/colorGrey"
+        android:textSize="@dimen/smallText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_one_currency_converter" />
+
+    <TextView
+        android:id="@+id/text_one_currency_to_converter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/horizontal_margin"
+        android:text="@string/text_one_currency_to_converter"
+        android:textSize="@dimen/largeText"
+        android:fontFamily="@font/inter"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/text_last_update_time"
+        app:layout_constraintStart_toEndOf="@+id/text_one_currency_converter"
+        app:layout_constraintTop_toBottomOf="@+id/text_one_currency_to_another"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

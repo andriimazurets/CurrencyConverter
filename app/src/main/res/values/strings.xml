@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Currency Converter</string>
+    <string name="text_one_currency_to_another">1 Долар США равен</string>
+    <string name="text_last_update_time">31 окт., 10:56 UTC</string>
+    <string name="text_one_currency_to_converter">Евро</string>
+    <string name="ds_share">share</string>
+    <string name="text_one_currency_converter">0,95</string>
+</resources>
