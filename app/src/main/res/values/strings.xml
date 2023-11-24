@@ -5,4 +5,5 @@
     <string name="text_one_currency_to_converter">Евро</string>
     <string name="ds_share">share</string>
     <string name="text_one_currency_converter">0,95</string>
+    <string name="convert_text_btn">Convert</string>
 </resources>
