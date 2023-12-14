@@ -12,10 +12,5 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater).also { setContentView(it.root) }
 
-        val retrofit = Retrofit.Builder()
-            .baseUrl("http://data.fixer.io/api/")
-            .addConverterFactory(GsonConverterFactory.create())
-            .build()
-
     }
 }
